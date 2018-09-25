@@ -18,3 +18,4 @@ php_packages:
 - php-mbstring
 - php-sqlite3
 - php-apcu
+- libapache2-mod-php
