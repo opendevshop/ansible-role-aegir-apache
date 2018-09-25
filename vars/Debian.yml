@@ -19,3 +19,6 @@ php_packages:
 - php-sqlite3
 - php-apcu
 - libapache2-mod-php
+
+# Variables from geerlingguy.php-mysql
+php_mysql_package: php-mysql
