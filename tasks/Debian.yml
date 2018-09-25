@@ -1,17 +1,17 @@
 ---
-
-
-- name: Install Apache2 PHP Mod.
-  apt:
-    name: 'libapache2-mod-php'
-    state: present
-  when: ansible_os_family == 'Ubuntu' and ansible_distribution_major_version != '14.04')
-
-- name: Install Apache2 PHP Mod (Ubuntu 14).
-  apt:
-    name: 'libapache2-mod-php5'
-    state: present
-  notify:
-    - restart webserver
-    - restart php-fpm
-  when: ansible_os_family == 'Ubuntu' and ansible_distribution_major_version == '14.04'
+# Commented out because we have a special vars.Ubuntu14.yml file handling this now.
+#
+#- name: Install Apache2 PHP Mod.
+#  apt:
+#    name: 'libapache2-mod-php'
+#    state: present
+#  when: ansible_os_family == 'Ubuntu' and ansible_distribution_major_version != '14.04')
+#
+#- name: Install Apache2 PHP Mod (Ubuntu 14).
+#  apt:
+#    name: 'libapache2-mod-php5'
+#    state: present
+#  notify:
+#    - restart webserver
+#    - restart php-fpm
+#  when: ansible_os_family == 'Ubuntu' and ansible_distribution_major_version == '14.04'
