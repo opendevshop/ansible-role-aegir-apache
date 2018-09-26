@@ -10,5 +10,6 @@ php_packages:
   - php-gd
   - php-process
   - php-pear
+  - php-opcache
   - php-xml
   - php-mbstring
